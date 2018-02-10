@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Pompiere');
+
+html, body {
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: #000;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  font-family: 'Pompiere', sans-serif;  
+  font-size: 125%;
+  letter-spacing: -1px;
+  /* background-color: rgb(98, 98, 138); */
+}
+.header {
+  grid-area: header;
+  padding-top: 3em;
+  padding-bottom: 0rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  background: transparent;
+  background-image: url(../img/MSKWorks_Jumbo_001.jpg); 
+  background-size: cover;
+}
+.header img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  justify-content: center;
+}
+.col1, .col2, .col3 {
+  padding: 1px;
+  height: 800px;
+  background: fill;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: double;
+  border-color: black;
+  border-width: 3px;
+}
+.col1 {
+  grid-area: col1;
+  background-image: url(../img/column_Steampunk.jpg); 
+}
+.col2 {
+  grid-area: col2;
+  background-image: url(../img/column_Travel.jpg); 
+}
+.col3 {
+  grid-area: col3;
+  background-image: url(../img/column_About.jpg); 
+}
+.footer {
+  grid-area:  footer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  padding-top: 20px;
+  margin-top: 20px;
+  line-height: 40px; 
+  background: linear-gradient( 45deg, #0d0d18, #fff);
+}
+.footer img{
+  display: block;
+  justify-content: center;
+  position:absolute;
+  top:-45px;
+  left:0px;
+  width: 145px;
+  z-index: -1;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  'header header header'
+  'col1 col2 col3'
+  'footer footer footer';
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-gap: 5px;
+  padding: 20px;
+  justify-content: space-evenly;
+  color: black;
+}
+.grid-container h2{
+  color: black;
+  font-size: 200%;
+  text-align: center;
+  text-shadow: .02em .02em .1rem rgba(255, 255, 255, .8);
+  font-weight: bold;
+}
+
+.grid-container p{
+  color: black;
+  font-size: 125%;
+  text-align: center;
+  text-shadow: .02em .02em .1rem rgba(255, 255, 255, .8);
+  font-weight: bold;
+}
+.grid-container a{
+  padding: 0;
+}
+.vertical-align{
+  min-height: 800px;
+  position: relative;
+}
+.vertical-align img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  background: transparent;
+}
+
+@media (max-width: 760px) {
+  .grid-container p{
+    font-size: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+    'header header header' 
+    'col1 col1 col1' 
+    'col2 col2 col2'
+    'col3 col3 col3'
+    'footer footer footer';
+  }
+  .header img{
+    width: 400px;
+  }
+  .grid-container p{
+    font-size: 150%;
+  }
+}
+
+.jumbotron_2 {
+  padding-top: 3em;
+  padding-bottom: 0rem;
+  margin-bottom: 0;
+  background-color: #fff;
+  background: transparent;
+  height: 400px;
+  width: auto;
+  background-image: url(../img/MSKWorks_Jumbo_001.jpg); 
+  background-size: cover;
+}
+.jumbotron_img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height:350px;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  top:55px;
+  left:0px;
+}
+@media screen and (max-width: 760px){
+  .jumbotron_2{
+    padding-top: 7em;
+    padding-bottom: .5em;
+    height: 250px;
+    }
+  .jumbotron_img{
+    height: 200px;
+  }
+}
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+.jumbotron-heading {
+  font-weight: 300;
+}
+.jumbotron .container {
+  max-width: 40rem;
+}
+  

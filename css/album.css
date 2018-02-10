@@ -1,0 +1,137 @@
+.jumbotron {
+  padding-top: 10em;
+  padding-bottom: .5em;
+  margin-bottom: 0;
+  background-color: #fff;
+  background: transparent;
+  margin-top: 2.5em;
+  background-size: cover;
+  
+}
+.jumbotron, img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+@media screen and (max-width: 760px){
+  .jumbotron{
+    padding-top: 7em;
+    padding-bottom: .5em;
+    }
+}
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+.jumbotron-heading {
+  font-weight: 300;
+}
+.jumbotron .container {
+  max-width: 40rem;
+}
+  
+.post-content {
+    opacity: 1;
+    margin: 0 auto;
+    margin-top: -60px;
+    margin-bottom: 16px;
+    text-align:center;
+    position: relative;
+    width:50%;
+    text-shadow: .00em .00em .5rem rgba(255, 255, 255, 1);
+}
+.post-content h3{
+    font-size: 400%;
+    font-weight: bold;
+}
+@media screen and (max-width: 760px){
+  .post-content h3{
+      font-size: 300%;
+      font-weight: bold;
+    }
+}
+@media screen and (max-width: 400px){
+  .post-content h3{
+      font-size: 200%;
+      font-weight: bold;
+    }
+}
+
+.wrapper {
+    text-align:center;
+}
+
+.card-text {
+  font-size: 85%;
+  color: black;
+}
+.card-title {
+    font-size: 110%;
+    color: black;
+    font-weight: bold;
+  }
+  .card_pan{
+    font-weight: bold;
+
+  }
+.gallery-container h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: black;
+}
+
+.gallery-container p.page-description {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 18px;
+  color: black;
+}
+
+
+.tz-gallery {
+  padding: 10px;
+  
+}
+
+.tz-gallery .thumbnail {
+  padding: 0;
+  margin-bottom: 1px;
+  background-color: #fff;
+  border-radius: 1px;
+  border: none;
+  transition: 0.15s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tz-gallery .thumbnail:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.tz-gallery .lightbox img {
+  border-radius: 4px 4px 0 0;
+}
+
+.tz-gallery .caption{
+  padding: 26px 30px;
+  text-align: center;
+}
+
+.tz-gallery .caption h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.tz-gallery .caption p {
+  font-size: 12px;
+  color: #7b7d7d;
+  margin: 0;
+}
+.tz-gallery .card_pan {
+  width: 100%;
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}

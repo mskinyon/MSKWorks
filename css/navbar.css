@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css?family=Pompiere');
+
+
+.navbar {
+	margin-bottom: 0;
+	padding-top: 0;
+	background: #fff;
+	border: 0;
+	-moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+	-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+    -o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
+/*     background-image: -webkit-linear-gradient(top, #2f2f30, 0%, #fff, 100%);
+  background-image: -moz-linear-gradient(top, #2f2f30 0%, #fff 100%);
+  background-image: linear-gradient(to bottom, #2f2f30 0%, #fff 100%);
+  background-repeat: repeat-x;
+ */  background-image:linear-gradient( 45deg, #0d0d18, #fff); 
+}
+.navbar-no-bg {
+	padding-top: 10px; background: none;
+	-moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+.dropdown-menu {
+	background-color: #555;
+}
+.dropdown-item{
+	font-weight: 400;
+}
+ul.navbar-nav {
+	font-family: 'Pompiere', sans-serif;
+	font-size: 24px;
+	color: #888;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+ul.navbar-nav li a { background: none; color: #888; border: 0; }
+ul.navbar-nav li a:hover { background: none; color: #aaa; border: 0; }
+ul.navbar-nav li a:focus { background: none; color: #aaa; outline: 0; border: 0; }
+/* ul.navbar-nav li a:active { background: none; color: rgb(27, 91, 230); outline: 0; border: 0; } */
+
+.navbar-no-bg ul.navbar-nav { color: #fff; }
+.navbar-no-bg ul.navbar-nav li a { color: #fff; }
+.navbar-no-bg ul.navbar-nav li a:focus { color: #ddd; }
+
+ul.navbar-nav li a.btn-link-3 {
+	position: relative;
+	display: inline-block;
+	margin: 9px 0 0 15px;
+	padding: 6px 15px;
+	background: #6eba3c;
+	border: 0;
+	font-family: 'Pompiere', sans-serif;
+	font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px;
+}
+ul.navbar-nav li a.btn-link-3:hover,
+ul.navbar-nav li a.btn-link-3:focus,
+ul.navbar-nav li a.btn-link-3:active,
+ul.navbar-nav li a.btn-link-3:active:focus { outline: 0; background: #63a736; color: #fff; }
+
+.dropdown-item>.active>a,
+.dropdown-item>.active>a:hover,
+.dropdown-item>.active>a:focus
+{
+	background-color: #626460;
+	color: black;
+}
+
+.navbar-brand {
+    width: 80px;
+	background: url(../img/MSKWorks_Logo_Icon_50.png) left center no-repeat;
+	text-indent: -99999px;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 0; }
+
+.navbar-no-bg .navbar-brand { background-image: url(../img/MSKWorks_Logo_150x50.png); }
+
+.navbar-toggle .icon-bar { background: #555; }
+
+
+/***** Top content *****/
+
+.top-content { padding: 120px 0 150px 0; }
+
+.top-content .text { padding-top: 60px; color: #fff; }
+.top-content .text h1 { color: #fff; }
+
+.top-content .description { margin: 30px 0 10px 0; }
+.top-content .description p { opacity: 0.8; }
+.top-content .description a { color: #fff; border-bottom: 1px dotted #fff; }
+.top-content .description a:hover, .top-content .description a:focus { color: #fff; border: 0; }
+
+
+/***** Features *****/
+
+.features-box { margin-top: 30px; text-align: left; }
+.features-box .features-box-icon { font-size: 60px; color: #6eba3c; line-height: 60px; text-align: center; }
+.features-box h3 { margin-top: 0; padding: 0 0 10px 0; }
+
+
+/***** Footer *****/
+
+footer { padding: 40px 0 45px 0; background: #f8f8f8; }
+
+.footer-copyright { padding-top: 15px; }
+.footer-copyright a { color: #888; border-bottom: 1px dotted #888; }
+.footer-copyright a:hover, .footer-copyright a:focus { color: #888; border: 0; }
+
+
+
+/***** MEDIA QUERIES *****/
+
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.section-description p { padding: 0; }
+	
+	.features-box .features-box-icon { font-size: 50px; line-height: 50px; }
+
+}
+
+@media (max-width: 767px) {
+	
+	.navbar { padding-top: 0; background: #fff; background-image:linear-gradient( 45deg, #2f2f30, #fff); }
+	.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand { margin-left: 15px; }
+	.navbar-collapse { border: 0; }
+	.navbar-toggle { border-color: transparent; }
+	ul.navbar-nav li a.btn-link-3 { margin: 10px; }
+	
+	.navbar-no-bg {
+		-moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+		-webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+	}
+	.navbar-no-bg .navbar-brand { background-image: url(../img/MSKWorks_Logo_150x50.png); }
+	
+	.navbar-no-bg ul.navbar-nav { color: #888; }
+	.navbar-no-bg ul.navbar-nav li a { color: #888; }
+	.navbar-no-bg ul.navbar-nav li a:hover { color: #aaa; }
+	.navbar-no-bg ul.navbar-nav li a:focus { color: #aaa; }
+	
+	.navbar-no-bg ul.navbar-nav li a.btn-link-3 { color: #fff; }
+	.navbar-no-bg ul.navbar-nav li a.btn-link-3:hover,
+	.navbar-no-bg ul.navbar-nav li a.btn-link-3:focus,
+	.navbar-no-bg ul.navbar-nav li a.btn-link-3:active,
+	.navbar-no-bg ul.navbar-nav li a.btn-link-3:active:focus { color: #fff; }
+	
+	/* end navbar */
+	
+	.section-description p { padding: 0; }
+	
+	.top-content { padding: 40px 0 60px 0; }
+	
+	.features-box { text-align: center; }
+	.features-box h3 { margin-top: 5px; padding-top: 10px; }
+
+}
+
+@media (max-width: 415px) {
+	
+	h1, h2 { font-size: 36px; }
+
+}
+
+
+/* Retina-ize img/icons */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	
+	/* logo */
+    .navbar-brand {
+    	background-image: url(../img/MSKWorks_Logo_150x50.png) !important; background-repeat: no-repeat !important; background-size: 102px 32px !important;
+    }
+    
+    .navbar-no-bg .navbar-brand { background-image: url(../img/MSKWorks_Logo_150x50.png); }
+	
+}

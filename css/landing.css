@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Pompiere');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(../img/MSKWorks_landing.jpg) no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+
+  /* background: url(img/MSKWork_Logo_Icon_001.png) no-repeat left top; */
+}
+
+.intro .inner{
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.content h1{
+  font-family: 'Pompiere', sans-serif;
+  letter-spacing: -4px;
+  color: #f9f3f4;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 500%;
+}
+
+.btn{
+  border-radius: 9px;
+  font-family: 'Oswald', sans-serif;
+  color: #042830;
+  font-size: 135%;
+  padding: 10px 20px;
+  border: solid#042830 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.btn:hover{
+  color: white;
+  border: solid white 3px;
+}
+p {
+  font-size: 120%;
+  line-height: 220%;
+  text-align: justify;
+  margin: 3%;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 760px){
+  .content h1{
+    font-size: 250%;
+  }
+  .btn {
+    font-size: 110%;
+    padding: 7px 15px;
+  }
+  p {
+    font-size: 100%;
+    line-height: 100%;
+  }
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    width: 100%;
+}
+@media screen and (max-width: 760px){
+  .content img{
+    width: 75%;
+  }
+}
+
+/* 
+
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Crushed|Dorsa|Dosis|Josefin+Sans|Medula+One|Montserrat|Open+Sans+Condensed:300|Pompiere|Stint+Ultra+Condensed');
+<link href="https://fonts.googleapis.com/css?family=Amaranth|Crushed|Dorsa|Dosis|Josefin+Sans|Medula+One|Montserrat|Open+Sans+Condensed:300|Pompiere|Stint+Ultra+Condensed" rel="stylesheet"> 
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Pompiere', cursive;
+    font-family: 'Crushed', cursive;
+    font-family: 'Dorsa', sans-serif;
+    font-family: 'Medula One', cursive;
+    font-family: 'Stint Ultra Condensed', cursive;
+
+
+ */
